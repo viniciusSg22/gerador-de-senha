@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de senha - vsGenerator</title>
+    <script src="scripts/script.js"></script>
+    <link rel="icon" href="images/vsG.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="images/infinito.png" style="width: 48px; height: 48px;">
+            <span class="gerador">Gerador de senhas</span>
+        </div>
+    </header>
+    <main>
+        <p class="campos">Precisa de uma senha? Experimente o vsGenerator
+        </p>
+        <div class="qtd">
+            <div class="center">
+                <h2>Quantidade de senhas:</h2>
+                <input id="entrada1" type="number" placeholder="Somente números inteiros (1, 2, 20...)">
+            </div>
+            <div class="center">
+                <h2>Quantidade de caracteres:</h2>
+                <input id="entrada2" type="number" placeholder="Somente números inteiros (1, 2, 20...)">
+            </div>
+        </div>
+        <div class="slc">
+            <h2>Selecione os caracteres que deseja gerar:</h2>
+            <div class="chkbox">
+                <input type="checkbox" id="numero" name="numero">
+                <label for="numero">Números</label>
+                <input type="checkbox" id="minusculos" name="minusculos">
+                <label for="minusculos">Letras minúsculas</label>
+                <input type="checkbox" id="maiusculos" name="maiusculos">
+                <label for="maiusculos">Letras maiúsculas</label>
+                <input type="checkbox" id="caracteres" name="caracteres">
+                <label for="caracteres">Caracteres</label>
+            </div>
+            <button onclick="gerarSenha()">GERAR</button>
+        </div>
+        <div class="grd">
+            <h2>Senhas geradas:</h2>
+        </div>
+        <textarea id="saida" disabled></textarea>
+
+        <div class="titulo">Porque preciso de um gerador de senha?</div>
+        <div>
+            <span class="esqr">
+                <h2>Senhas fortes</h2>
+            </span>
+            <div class="conteudo">
+                Senhas que são compostas por letras(maiúsculas e minúsculas) números e caracteres tornam o trabalho de hackers muito mais difíceis, inclusive tornam o método "força bruta" ineficaz, com isso em vista podemos dizer que uma senha forte é a principal barreira
+                para evitar a invasão contra a suas contas
+                <img src="images/forca.png" style="width: 100px; height: 100px; padding-left: 32px;">
+            </div>
+        </div>
+        <div>
+            <span class="esqr">
+                <h2>Senhas exclusivas</h2>
+            </span>
+            <div class="conteudo">Imagine uma senha para tudo, desde redes sociais até email ou conta bancárias, se por um acaso alguém tiver acesso à sua senha do email, ela também terá acesso à sua conta bancária e redes sociais, podendo se passar por você e até mesmo realizar
+                transações indesejadas
+                <img src="images/senha.jpg" style="width: 100px; height: 100px; padding-left: 32px;">
+            </div>
+        </div>
+        <div>
+            <span class="esqr">
+                <h2>Senhas aleatórias</h2>
+            </span>
+            <div class="conteudo">
+                Senhas sem um padrão definido são as senhas aleatórios, e se por um lado elas são extremamente fortes, elas também podem ser prejudiciais ao usuário, uma vez que por não apresentarem o nome do seu cachorro por exemplo, elas são dificeis e serem lembradas
+                e nos obrigam a salvar a senha no navegador, o que pode ser ruim se seu celular ou notebook seja furtado.
+                <img src="images/infinito.png" style="width: 100px; height: 100px; padding-left: 32px; margin-bottom: 32px;">
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy;
+        <script>
+            document.write(newDate().getFullYear());
+        </script>, Vinícius Sanches Geniselli
+    </footer>
+</body>
+
+</html>

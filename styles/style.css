@@ -1,0 +1,112 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #209CEE;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: white;
+    margin: 0 10% 0 10%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0 8px 0;
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+
+.gerador {
+    font-family: cursive;
+    font-size: 28px;
+    padding-left: 8px;
+}
+
+.campos {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 32px;
+    margin-top: 0;
+}
+
+.qtd {
+    display: flex;
+    justify-content: space-around;
+}
+
+.center {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.slc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chkbox {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.grd {
+    display: flex;
+    justify-content: center;
+}
+
+#saida {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+    resize: vertical;
+}
+
+.titulo {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.dir {
+    display: flex;
+    margin: 0 10% 0 10%;
+    justify-content: flex-end;
+}
+
+.esqr {
+    display: flex;
+    margin: 0 10% 0 10%;
+}
+
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 10% 0 10%;
+}
+
+.imgEsq {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding-left: 32px
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(43, 42, 42);
+    padding: 8px 0 8px 0;
+}
